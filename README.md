@@ -34,3 +34,6 @@ If you are using i3blocks:
 	interval=once
 	command=echo $(python3 /path/to/executable/scrapechan.py)
 	separator=true
+
+### Screenshot of use in i3bar
+![screenshot](https://raw.githubusercontent.com/DrBlythe/scrapechan/master/sc-screenshot.png)  
