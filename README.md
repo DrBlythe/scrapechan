@@ -8,21 +8,24 @@ and prints that to stdout
 	python-requests  
 
 
-### Usage: 
-$ python3 scrapechan.py [board name]  
-(i.e.) $ python3 scrapechan.py g  
-( or ) $ python3 scrapechan.py wg  
+### Example Usage: 
+	$ python3 scrapechan.py g
+	$ python3 scrapechan.py a
 
 
 Running with no board argument will default to /g/  
-Add any phrases or words that you want to filter to the lists, below  
+Add any phrases or words that you want to filter to the lists within the code  
+You'd probably want to add separate lists for each board you use  
+
+
 Pay attention to the format of the phrase though, example:  
-	Adding "phone" will cause a post with 'microphone' to be deemed bad, however  
-	adding " phone " (spaces surrounding) will only do so if the word phone (by  
-	itself) is in the thread title  
+
+Adding "phone" will cause a post with 'microphone' to be deemed bad, however  
+adding " phone " (spaces surrounding) will only do so if the word phone (by  
+itself) is in the thread title  
 	
 
-I use this in my i3bar to see whether or not /g/ is even worth checking (it's not)  
+I use this in my i3bar to see whether or not /g/ is even worth checking at the moment(it's not)  
 If you are using i3blocks:  
 
 	# /g/ thread analyzer
