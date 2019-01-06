@@ -1,8 +1,11 @@
 # ScrapeChan: A quality analyzer for all current posts on any 4chan board  
 
-This script scrapes 4chan board catalogs for thread titles/teasers,
+This Python program scrapes 4chan board catalogs for thread titles/teasers,
 uses a blacklist of phrases to determine the amount/percentage of crappy threads,
-and prints that to stdout
+and prints that to stdout  
+
+Dependencies:
+	python-requests
 
 
 Usage: $ python3 scrapechan.py [board name]
