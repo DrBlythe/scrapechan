@@ -4,13 +4,14 @@ This Python program scrapes 4chan board catalogs for thread titles/teasers,
 uses a blacklist of phrases to determine the amount/percentage of crappy threads,
 and prints that to stdout  
 
-Dependencies:  
+### Dependencies:  
 	python-requests  
 
 
-Usage: $ python3 scrapechan.py [board name]  
-i.e.   $ python3 scrapechan.py g  
-       $ python3 scrapechan.py wg  
+### Usage: 
+$ python3 scrapechan.py [board name]  
+(i.e.) $ python3 scrapechan.py g  
+( or ) $ python3 scrapechan.py wg  
 
 
 Running with no board argument will default to /g/  
