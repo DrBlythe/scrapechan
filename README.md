@@ -1,8 +1,8 @@
 # ScrapeChan: A quality analyzer for all current posts on any 4chan board  
 
-This Python program scrapes 4chan board catalogs for thread titles/teasers,
-uses a blacklist of phrases to determine the amount/percentage of crappy threads,
-and prints that to stdout  
+This Python program scrapes a specified 4chan board catalog for thread titles/teasers,
+runs the titles against (you)r list of words/phrases, and returns the percentage of threads
+that match anything in that list.
 
 ### Dependencies:  
 	python-requests  
@@ -32,7 +32,7 @@ If you are using i3blocks:
 	[absolute_state]
 	label=Absolute State
 	interval=once
-	command=echo $(python3 /path/to/executable/scrapechan.py)
+	command=echo $(python3 /path/to/scrapechan.py)
 	separator=true
 
 ### Screenshot of use in i3bar
