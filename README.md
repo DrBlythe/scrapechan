@@ -30,7 +30,7 @@ If you are using i3blocks:
 
 	# /g/ thread analyzer
 	[absolute_state]
-	label=/g/ Brainlet Meter
+	label=Absolute State
 	interval=once
 	command=echo $(python3 /path/to/executable/scrapechan.py)
 	separator=true
