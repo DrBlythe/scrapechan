@@ -36,4 +36,4 @@ If you are using i3blocks:
 	separator=true
 
 ### Screenshot of use in i3bar
-![screenshot](https://raw.githubusercontent.com/DrBlythe/scrapechan/master/sc-screenshot.png)  
+![screenshot](https://raw.githubusercontent.com/DrBlythe/scrapechan/master/scrapechan_scrot.jpg)  
