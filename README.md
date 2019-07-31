@@ -6,7 +6,6 @@ that match anything in that list.
 
 ### Dependencies:  
 	python-requests  
-	python-regex
 
 
 ### Example Usage: 
