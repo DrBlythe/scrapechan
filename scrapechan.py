@@ -97,22 +97,22 @@ def run_scrapechan():
                      bad_thread_count += 1
                      break
 
-elif board == 'a':
-    for title in thread_list:
-     if  len(title.split()) < 5:
-         bad_thread_count += 1
-         continue
-     elif (title[0:4] == greentext): # If title starts with greentext
-         bad_thread_count += 1
-         continue
-     else:
-         for char in special_chars:
-             title = title.replace(char,"")
-         for phrase in a_blacklist:
-             if phrase in title.lower():
-                 bad_thread_count += 1
-                 break
-
+    elif board == 'a':
+        for title in thread_list:
+         if  len(title.split()) < 5:
+             bad_thread_count += 1
+             continue
+         elif (title[0:4] == greentext): # If title starts with greentext
+             bad_thread_count += 1
+             continue
+         else:
+             for char in special_chars:
+                 title = title.replace(char,"")
+             for phrase in a_blacklist:
+                 if phrase in title.lower():
+                     bad_thread_count += 1
+                     break
+    
     percentage = round(( (total_threads-bad_thread_count) / total_threads)*100)
     print(str(percentage)+"%")
     
