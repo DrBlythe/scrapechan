@@ -1,4 +1,4 @@
-# Mameko-Chan: A "quality analyzer" for all current posts on any 4chan board  
+# Memeko-Chan: A "quality analyzer" for all current posts on any 4chan board  
 
 This Python script scrapes a specified 4chan board catalog for thread titles/teasers,
 runs the titles against (you)r list of words/phrases, and returns the percentage of threads
