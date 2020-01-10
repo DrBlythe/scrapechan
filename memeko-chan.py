@@ -1,38 +1,3 @@
-'''
-ABOUT:
-
-
-    This script scrapes 4chan board catalogs for thread titles/teasers,
-    uses a blacklist of phrases to determine the amount/percentage of zoomer/boomer/brainlet threads,
-    and returns that as a string to stdout
-
-
-    Usage: $ python3 scrapechan.py [board name]
-    i.e.   $ python3 scrapechan.py g
-           $ python3 scrapechan.py a
-
-
-    Running with no board argument will default to /g/
-    Add any phrases or words that you want to filter to the lists, below
-    Pay attention to the format of the phrase though, example:
-        Adding "phone" will cause a post with 'microphone' to be deemed bad, however
-        adding " phone " (spaces surrounding) will only do so if the word phone (by
-        itself) is in the thread title
-    This could all just be done with regexes probably, but it's already done, so...
-
-
-    I use this in my i3bar (polybar now) to see whether or not /g/ is even worth checking (it's not)
-    If you are using i3blocks:
-
-        # /g/
-        [absolute_state]
-        label=/g/
-        interval=once
-        command=echo $(python3 /path/to/scrapechan.py)
-        separator=true
-'''
-
-
 import requests
 import re
 import sys
@@ -119,7 +84,7 @@ def run_scrapechan():
 
 # Blacklisted phrases or words
 #
-g_blacklist = ["bro ","seething ","apple ","install gentoo","absolute state","you may not like it but", "why havent","why doesnt", "why arent you","he doesnt","developer ", "based and","good afternoon","discord ","zoomers ","meme ","hey guys","smartphone"," phone","google","coding","memes ","browser","firefox","waterfox", "chrome ","chromium","sup "," moon","rip ","gaym","android ","stickers ","game","web ","normie","itoddler","btfo "," shill"," sjw ", " interject ","one copy of","gaming","daily reminder"," reminder ","virtual reality"," vr "," brave", "he doesnt"," intel "," amd ","nvidia"," gpu"," 5g "," pajeet ", " burger ", " app", "freetard","windows","incel ","madmen","comfy","absolute state"," mac "," ios","reddit","what does g think","intellectual ","oh no no"," cia ","youtube"," university ","student","threadripper"," rig ", "battlestation","prove me wrong"," youll ever need","gnome","instagram","facebook","twitter","tfw ","nothin personnel"]
+g_blacklist = ["bro ","seething ","apple ","install gentoo","absolute state","you may not like it but", "why havent","why doesnt", "why arent you","he doesnt","developer ", "based and","good afternoon","discord ","zoomers ","meme ","hey guys","smartphone"," phone","google","coding","memes ","browser","firefox","waterfox", "chrome ","chromium","sup "," moon","rip ","android ","stickers ","game","web ","normie","itoddler","btfo "," shill"," sjw ", " interject ","one copy of","gaming","daily reminder"," reminder ","virtual reality"," vr "," brave", "he doesnt"," intel "," amd ","nvidia"," gpu"," 5g ", " burger ", " app","windows","madmen","comfy","absolute state"," mac "," ios","reddit","what does g think","intellectual ","oh no no"," cia ","youtube"," university ","student","threadripper"," rig ", "battlestation","prove me wrong"," youll ever need","gnome","instagram","facebook","twitter","tfw ","nothin personnel"]
 
 a_blacklist = ["boku no hero","my hero","shounen","shonen"]
 
